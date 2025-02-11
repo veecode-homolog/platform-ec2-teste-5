@@ -75,7 +75,7 @@
         
     - name: Create namespace platform
       shell: |
-        kubectl create namespace platform           
+        kubectl get namespace platform || kubectl create namespace platform
 
     - name: Install postgresql
       shell: |
